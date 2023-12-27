@@ -19,3 +19,10 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+.active {
+  @apply bg-tertiary px-5 py-1 rounded-[100px] [color:black]
+}
+.inactive {
+  @apply px-5 py-1
+}
