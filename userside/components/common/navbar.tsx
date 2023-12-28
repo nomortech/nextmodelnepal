@@ -46,12 +46,12 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="main flex  items-center justify-between px-[60px] py-[50px]">
+      <div className="main flex  items-center justify-between px-[60px] py-[30px]">
         <div className="logo">
-          <Image src={"/logo.png"} alt="logo" width={50} height={50}></Image>
+          <Image src={"/logo.png"} alt="logo" width={100} height={100}></Image>
         </div>
 
-        <ul className="flex gap-2 items-center justify-center">
+        <ul className="flex gap-5 items-center justify-center text-[1.5rem]">
           {links.map((item, i) => (
             <li key={i}>
               <Link
@@ -83,7 +83,7 @@ export default function Navbar() {
 
           <li className="flex items-center ml-4">
             <button aria-label="Open cart" onClick={openCart}>
-              <RxHamburgerMenu size={25} />
+              <RxHamburgerMenu size={40} />
             </button>
           </li>
         </ul>

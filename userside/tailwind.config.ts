@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss'
 
+import colors from 'tailwindcss/colors'
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,10 +13,12 @@ const config: Config = {
       primary: "#141414",
       secondary: "#EADECE",
       textPrimary: "#EDE5D8",
-      tertiary: "#AE9775"
+      tertiary: "#AE9775",
+      blur: "#A89579",
+      ...colors
     },
     extend: {
-  
+      
     },
   },
   plugins: [],

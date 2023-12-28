@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
       <button
         type="button"
         className={twMerge(
-          "bg-tertiary flex items-center justify-center hover:bg-primary/80 text-white text-[14px] py-2 px-4",
+          "bg-tertiary flex items-center justify-center text-white text-[16px] py-2 px-4",
           className
         )}
         {...props}
@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type="button"
       className={twMerge(
-        "bg-primary flex items-center justify-center hover:bg-primary/80 text-white text-[14px] py-2 px-4",
+        "bg-primary flex items-center justify-center text-white text-[16px] py-2 px-4",
         className
       )}
       {...props}
