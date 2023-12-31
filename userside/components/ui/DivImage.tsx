@@ -32,7 +32,7 @@ export const DivImage: React.FC<GridTileImageWithOverlayProps> = ({
         alt="hero active image"
         src={src}
         className={twMerge(
-          "transition z-[-1] absolute inset-0 object-cover object-center duration-300 ease-in-out group-hover:scale-105",
+          "transition z-[-1] absolute inset-0 object-cover object-center duration-300 ease-in-out ",
           imageClassname
         )}
         style={{ opacity: alpha }}

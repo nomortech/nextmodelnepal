@@ -33,8 +33,8 @@ export default function Navbar() {
       active: pathname === "/about",
     },
     {
-      name: "Become a Model",
-      href: "/model",
+      name: "Hire Model",
+      href: "/models/hire",
       active: pathname === "/model",
     },
     {
