@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.active {
+  @apply bg-tertiary px-5 py-1 rounded-[100px] [color:black]
+}
+
+
+.inactive {
+  @apply px-5 py-1
+}
+
+@layer utilities {
+  .active {
+    @apply bg-tertiary px-5 py-1 rounded-[100px] [color:black]
+  }
+
+  .balance {
+    text-wrap: balance;
+  }
+
+  .hr-horizontal {
+    @apply w-full border-t-2 border-tertiary;
+  }
+  .hr-vertical {
+    @apply h-24 border-l-2 border-tertiary min-h-[15rem];
+  }
+  
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Reduce the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Optional: Change the track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4B5563; /* Change the thumb color */
+  border-radius: 5px; /* Optional: Add border-radius to the thumb */
+}
+
+/* Applying the styles with Tailwind */
+.scrollbar {
+  @apply overflow-y-scroll;
+}
+
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+
+  animation: slideAnimation linear infinite;
+}
