@@ -13,7 +13,13 @@ const nextConfig = {
                 hostname: "images.pexels.com",
                 port: "",
                 pathname: "/**",
-            }
+            },
+            {
+                protocol: "https",
+                hostname: "cloudflare-ipfs.com",
+                port: "",
+                pathname: "/**",
+            },
         ],
     }
 }
