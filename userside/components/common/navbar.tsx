@@ -24,18 +24,13 @@ export default function Navbar() {
     },
     {
       name: "Events",
-      href: "/events",
+      href: "/events/1",
       active: pathname === "/events",
     },
     {
       name: "About",
       href: "/about",
       active: pathname === "/about",
-    },
-    {
-      name: "Hire Model",
-      href: "/models/hire",
-      active: pathname === "/model",
     },
     {
       name: "Contact",
@@ -62,6 +57,22 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li>
+            <Menu trigger="hover" openDelay={100} closeDelay={400}>
+              <Menu.Target>
+                <span className="cursor-pointer">Hire Model</span>
+              </Menu.Target>
+              <Menu.Dropdown>
+                <Menu.Item>
+                  <Link href="/models/hire/male">Male Models</Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link href="/models/hire/female">Female Models</Link>
+                </Menu.Item>
+              </Menu.Dropdown>
+            </Menu>
+          </li>
+
           <li>
             <Menu trigger="hover" openDelay={100} closeDelay={400}>
               <Menu.Target>
