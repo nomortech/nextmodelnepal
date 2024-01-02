@@ -29,7 +29,18 @@ body {
   @apply px-5 py-1
 }
 
+.bg-custom-color {
+  background-color: #AC9475;
+}
+
 @layer utilities {
+
+  .bg-grid-lines {
+    background-image: linear-gradient(to right, #e2e8f024 1px, transparent 1px), 
+      linear-gradient(to bottom, #e2e8f02d 1px, transparent 1px);
+    background-size: 84px 84px;
+  }
+  
   .active {
     @apply bg-tertiary px-5 py-1 rounded-[100px] [color:black]
   }
@@ -90,4 +101,28 @@ body {
   width: max-content;
 
   animation: slideAnimation linear infinite;
+}
+
+/* ... existing styles ... */
+
+.timeline-line {
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+  margin-left: 10px;
+}
+
+.timeline-btn {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timeline-btn.active {
+  background-color: #34a853;
 }
