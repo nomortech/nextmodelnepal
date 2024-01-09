@@ -5,15 +5,15 @@ import Link from "next/link";
 
 export default function Discover() {
   return (
-    <div className="py-[10rem] flex flex-col gap-8 items-center">
+    <div className="py-[5rem] md:py-[10rem] flex flex-col gap-8 items-center">
       <TextDetails
         title="Discover our Dazzlings models"
         subtitle="Explore our portfolio of diverse and talented models, each ready to redefine the world of fashion and entertainment."
       />
-      <div className="flex items-center gap-[5rem] justify-center">
+      <div className="flex items-center gap-[5rem] justify-items-center justify-center ">
         <div className="flex flex-col items-center  gap-[2rem]">
-          <h2 className="text-4xl">Female Models</h2>
-          <div className="flex flex-wrap gap-[5rem] justify-center">
+          <h2 className="text-4xl text-center">Female Models</h2>
+          <div className="flex flex-wrap items-center gap-[5rem] justify-center">
             <div className="single flex flex-col w-[200px] gap-2">
               <GridTileImage
                 src={
@@ -68,8 +68,8 @@ export default function Discover() {
         <hr className="hr-vertical" />
 
         <div className="flex flex-col items-center  gap-[2rem]">
-          <h2 className="text-4xl">Male Models</h2>
-          <div className="flex flex-wrap gap-[5rem]">
+          <h2 className="text-4xl text-center">Male Models</h2>
+          <div className="flex flex-wrap items-center gap-[5rem]">
             <div className="single flex flex-col w-[200px] gap-2">
               <GridTileImage
                 src={

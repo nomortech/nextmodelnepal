@@ -9,7 +9,7 @@ export default function Events() {
         subtitle="Next Models Nepal specializes in top-tier event management services in Nepal. We handle every detail, ensuring your event is flawless and memorable."
       />
 
-      <div className="gallery flex gap-[4rem] flex-wrap">
+      <div className="gallery flex items-center justify-center gap-[2rem] md:gap-[4rem] flex-wrap">
         {Array.from({ length: 4 }, (_, index) => (
           <div key={index} className="single flex flex-col w-[380px] gap-3">
             <GridTileImage

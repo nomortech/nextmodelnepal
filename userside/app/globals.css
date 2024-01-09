@@ -35,10 +35,20 @@ body {
 
 @layer utilities {
 
+  .responsive-padding {
+    @apply p-[2rem] md:p-[3rem] lg:p-[3rem] xl:p-[4rem] 
+  }
+  
   .bg-grid-lines {
     background-image: linear-gradient(to right, #e2e8f024 1px, transparent 1px), 
       linear-gradient(to bottom, #e2e8f02d 1px, transparent 1px);
     background-size: 84px 84px;
+  }
+
+  .bg-grid-sm-lines {
+    background-image: linear-gradient(to right, #e2e8f024 1px, transparent 1px), 
+      linear-gradient(to bottom, #e2e8f02d 1px, transparent 1px);
+    background-size: 48px 48px;
   }
   
   .active {

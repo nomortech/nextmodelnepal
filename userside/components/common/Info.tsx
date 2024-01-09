@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function InfoDetails() {
   return (
-    <section className="flex flex-col gap-[5rem]">
-      <div className="info-details flex p-[4rem] m-[8rem] bg-[#272727] gap-[4rem] flex-wrap rounded-lg">
+    <section className="flex flex-col gap-[1rem] lg:gap-[5rem]">
+      <div className="info-details flex responsive-padding m-[8rem] bg-[#272727] gap-5  md:gap-[4rem] flex-wrap rounded-lg">
         <div className="flex flex-col justify-center flex-1 gap-4">
           <h1 className="text-6xl font-bold text-balance">
             Dive into the world of modeling
@@ -14,7 +14,7 @@ export default function InfoDetails() {
             provident minima odit voluptatum quod voluptatem magnam fuga,
             exercitationem amet expedita alias.
           </p>
-          <div className="flex gap-3">
+          <div className="flex gap-3 flex-col md:flex-row">
             <Button>View All Models</Button>
             <Button variant="secondary">Become a Models</Button>
           </div>
@@ -39,7 +39,7 @@ export default function InfoDetails() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <h2 className="text-5xl text-center font-bold">
           Dive into the World of Modeling
         </h2>
@@ -70,13 +70,13 @@ export default function InfoDetails() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex gap-[2rem] max-w-[90vw] m-auto ">
+      <div className="flex flex-col lg:flex-row gap-[2rem] max-w-[90vw] m-auto ">
         {Array.from({ length: 2 }, (_, index) => (
           <div
             key={index}
-            className="single relative  z-[-1] bg-[#0E0E0E] overflow-hidden flex flex-col justify-start items-start p-[4rem] gap-[1.5rem] rounded-xl flex-1"
+            className="single relative z-[-1] bg-[#0E0E0E] overflow-hidden flex flex-col justify-start items-start p-[4rem] gap-[1.5rem] rounded-xl flex-1"
           >
             <div className="absolute z-[-1] top-32 h-[200px] w-[200px] bg-[#ae8c75]  filter blur-[250px] pointer-events-none"></div>
 
