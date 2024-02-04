@@ -11,7 +11,7 @@ export async function generateStaticParams({
   const events = await res.json();
   console.log(events);
 
-  return events.map((event) => ({
+  return events.map((event: any) => ({
     slug: event.id,
   }));
 }

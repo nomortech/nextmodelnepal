@@ -76,7 +76,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <div className="flex flex-col items-center">
       {events &&
-        events.map((event, index) => (
+        events.map((event: any, index: number) => (
           <div
             key={index}
             className="relative last:mb-[10rem] first:pt-[10rem]"
