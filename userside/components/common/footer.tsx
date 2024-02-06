@@ -5,7 +5,7 @@ import { GridTileImage } from "../ui/GridImage";
 export default function Footer() {
   return (
     <div className="bg-black w-full">
-      <div className=" flex gap-[3rem] py-[8rem] items-end w-[90vw] m-auto">
+      <div className="flex flex-col md:flex-row gap-[3rem] py-5 md:py-[8rem] items-start md:items-end w-[90vw] m-auto">
         <div className=" ">
           <div className="logo">
             <Image
@@ -16,27 +16,48 @@ export default function Footer() {
             ></Image>
           </div>
 
-          <p>We are next models no 1 modeling agency in Nepal.</p>
+          <p className="py-2">We are next models no 1 modeling agency in Nepal.</p>
           <p>Anamnagar, Kathmandu Nepal</p>
           <p>Anamnagar, Baneshwor Nepal</p>
         </div>
-        <div className="flex flex-col gap-2">
-          <h1>Quick Links</h1>
-          <Link href={"/"}>Become a model</Link>
-          <Link href={"/"}>Event Management</Link>
-          <Link href={"/"}>Our Models</Link>
+        
+        <div>
+          <div className="flex flex-col justify-start gap-2">
+            <h1 className="text-xl pb-3">Quick Links</h1>
+            <Link href={"/"} className="relative">
+              <div className="border-b border-white w-16 absolute bottom-0 left-0"></div>
+              Become a model
+            </Link>
+            <Link href={"/"} className="relative">
+              <div className="border-b border-white w-16 absolute bottom-0 left-0"></div>
+              Event Management
+            </Link>
+            <Link href={"/"} className="relative">
+              <div className="border-b border-white w-16 absolute bottom-0 left-0"></div>
+              Our Models
+            </Link>
+          </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h1>Others</h1>
-          <Link href={"/"}>About Next models nepal</Link>
-          <Link href={"/"}>Contact Next models nepal</Link>
-          <Link href={"/"}>Our gallery</Link>
+          <h1 className="text-xl pb-3">Others</h1>
+          <Link href={"/"} className="relative capitalize">
+            <div className="border-b border-white w-16 absolute bottom-0 left-0"></div>
+            About Next models nepal
+          </Link>
+          <Link href={"/"} className="relative capitalize">
+            <div className="border-b border-white w-16 absolute bottom-0 left-0"></div>
+            Contact Next models nepal
+          </Link>
+          <Link href={"/"} className="relative">
+            <div className="border-b border-white w-16 absolute bottom-0 left-0"></div>
+            Our gallery
+          </Link>
         </div>
         <div className="flex flex-col">
           <h1>Creating Unforgetable Moments</h1>
-          <div className="flex gap-3 w-[900px] overflow-x-scroll">
-            {Array.from({ length: 5 }).map((_, index) => (
+          <div className="flex gap-3 w-[auto] overflow-x-scroll">
+            {Array.from({ length: 3 }).map((_, index) => (
               <GridTileImage
                 key={index}
                 src={

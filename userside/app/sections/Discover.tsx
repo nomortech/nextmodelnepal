@@ -10,11 +10,11 @@ export default function Discover() {
         title="Discover our Dazzlings models"
         subtitle="Explore our portfolio of diverse and talented models, each ready to redefine the world of fashion and entertainment."
       />
-      <div className="flex items-center gap-[5rem] justify-items-center justify-center ">
+      <div className="flex flex-col md:flex-row items-center gap-[5rem] justify-items-center justify-center ">
         <div className="flex flex-col items-center  gap-[2rem]">
           <h2 className="text-4xl text-center">Female Models</h2>
           <div className="flex flex-wrap items-center gap-[5rem] justify-center">
-            <div className="single flex flex-col w-[200px] gap-2">
+            <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
                   "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?cs=srgb&dl=pexels-samarth-singhai-1193942.jpg&fm=jpg"
@@ -30,7 +30,7 @@ export default function Discover() {
 
               <span className="text-tertiary">2023-03-12</span>
             </div>
-            <div className="single flex flex-col w-[200px] gap-2">
+            <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
                   "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?cs=srgb&dl=pexels-samarth-singhai-1193942.jpg&fm=jpg"
@@ -46,7 +46,7 @@ export default function Discover() {
 
               <span>2023-03-12</span>
             </div>
-            <div className="single flex flex-col w-[200px] gap-2">
+            <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
                   "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?cs=srgb&dl=pexels-samarth-singhai-1193942.jpg&fm=jpg"
@@ -65,12 +65,12 @@ export default function Discover() {
           </div>
         </div>
 
-        <hr className="hr-vertical" />
+        <hr className="hr-vertical hidden md:block" />
 
-        <div className="flex flex-col items-center  gap-[2rem]">
+        <div className="flex flex-col items-center gap-[2rem]">
           <h2 className="text-4xl text-center">Male Models</h2>
-          <div className="flex flex-wrap items-center gap-[5rem]">
-            <div className="single flex flex-col w-[200px] gap-2">
+          <div className="flex flex-wrap items-center gap-[5rem] justify-center">
+            <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
                   "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWx8ZW58MHx8MHx8fDA%3D"
@@ -87,7 +87,7 @@ export default function Discover() {
               <span>2023-03-12</span>
             </div>
 
-            <div className="single flex flex-col w-[200px] gap-2">
+            <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
                   "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWx8ZW58MHx8MHx8fDA%3D"
@@ -104,7 +104,7 @@ export default function Discover() {
               <span>2023-03-12</span>
             </div>
 
-            <div className="single flex flex-col w-[200px] gap-2">
+            <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
                   "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWx8ZW58MHx8MHx8fDA%3D"
@@ -124,9 +124,17 @@ export default function Discover() {
         </div>
       </div>
 
-      <Button variant="secondary">
-        <Link href="/model">View all Model</Link>
-      </Button>
+      <div className="flex w-full justify-evenly">
+        <Button variant="secondary">
+          <Link href="/model">View Female Models</Link>
+        </Button>
+        <Button variant="secondary">
+          <Link href="/model">View all Model</Link>
+        </Button>
+        <Button variant="secondary">
+          <Link href="/model">View Male Model</Link>
+        </Button>
+      </div>
     </div>
   );
 }

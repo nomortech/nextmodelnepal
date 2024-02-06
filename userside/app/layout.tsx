@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body
         className={twMerge(
-          "min-h-screen bg-primary text-textPrimary",
+          "min-h-screen w-[100vw] bg-primary text-textPrimary",
           inter.className
         )}
       >

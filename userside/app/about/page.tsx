@@ -22,7 +22,7 @@ export default function Page() {
       </div>
 
       <div className="bg-white text-black py-[5rem]">
-        <div className="min-h-[30vh] w pt-[50px] flex flex-wrap items-center justify-center  gap-[5rem]">
+        <div className="min-h-[30vh] pt-[50px] flex flex-wrap items-center justify-center gap-[5rem]">
           {Array.from({ length: 4 }).map((_, index) => (
             <div className="flex flex-col gap-5">
               <h2>Customer Satisfaction</h2>
@@ -31,7 +31,7 @@ export default function Page() {
           ))}
         </div>
 
-        <div className="flex max-w-[60vw] m-auto gap-4 py-[5rem] ">
+        <div className="flex flex-col md:flex-row max-w-[90vw] md:max-w-[60vw] m-auto gap-4 pt-[5rem] md:py-[5rem] ">
           <div className="flex-1">
             <h1 className="text-3xl font-bold text-balance">
               We are Next model nepal and we are here to make the nepal a best.
