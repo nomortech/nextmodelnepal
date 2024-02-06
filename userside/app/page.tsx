@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import LogoSlider from "@/components/common/looper";
 import Events from "./sections/Events";
 import InfoDetails from "@/components/common/Info";
+import Testimonials from "@/components/common/testimonials";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Events />
       <Discover />
       <InfoDetails />
+      <Testimonials />
       <Contact />
       <LogoSlider />
     </div>

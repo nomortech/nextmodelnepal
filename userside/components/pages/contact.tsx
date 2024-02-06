@@ -19,66 +19,26 @@ export default function Contact() {
 
       <div className="form flex-1 flex flex-col flex-wrap items-center gap-3">
         <div className="flex gap-2">
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
+          <Input type="text" placeholder="Name"></Input>
+          <Input type="text" placeholder="Subject"></Input>
         </div>
         <div className="flex gap-2">
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
+          <Input type="text" placeholder="Email"></Input>
+          <Input type="text" placeholder="Phone"></Input>
+        </div>
+        <div className="flex gap-2 w-full">
+          <textarea placeholder="Your Message" className=" border rounded-md w-full active:border-primary min-w-[20vw] p-3 outline-white text-white bg-transparent focus:outline-none focus:shadow-outline placeholder:text-disabled" rows={5}></textarea>
+          {/* <Input type="textarea" placeholder="Your Message"></Input> */}
+        </div>
+        {/* <div className="flex gap-2">
+          <Input type="text" placeholder="Full Name"></Input>
+          <Input type="text" placeholder="Full Name"></Input>
         </div>
         <div className="flex gap-2">
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-        </div>
-        <div className="flex gap-2">
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-        </div>
-        <div className="flex gap-2">
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-          <Input
-            type="text"
-            placeholder="Full Name"
-            className="h-fit flex-1"
-          ></Input>
-        </div>
-        <Button>Submit</Button>
+          <Input type="text" placeholder="Full Name"></Input>
+          <Input type="text" placeholder="Full Name"></Input>
+        </div> */}
+        <Button className="bg-tertiary">Submit</Button>
       </div>
     </DivImage>
   );

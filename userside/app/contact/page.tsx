@@ -8,7 +8,7 @@ export default function Page() {
     <section className="flex flex-col gap-[10rem] my-[2rem]">
       <div className="hero relative w-[90vw] m-auto min-h-[60vh] flex items-center bg-[url('/girl.png')] bg-cover bg-center">
         {/* <Image src="/hero.png" alt="hero" className="absolute z-[-1] inset-0" /> */}
-        <div className="flex flex-col justify-center gap-2 pl-[7vw] max-w-[70%] py-[10vh] ">
+        <div className="flex flex-col justify-center gap-2 pl-[7vw] max-w-[96%] md:max-w-[70%] py-[10vh] ">
           <h1 className="font-bold">Your chance to shine ✨awaits!</h1>
           <h2 className="text-[4rem] leading-tight tracking-tighter font-semibold ">
             Contact US for Audition
@@ -25,7 +25,7 @@ export default function Page() {
       </div>
       <DivImage
         alt="contact"
-        className="min-h-[90vh] w-[90vw] m-auto "
+        className="min-h-[80vh] md:min-h-[90vh] w-[90vw] m-auto "
         innerClassName="flex items-center flex-col "
         active
         src="https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -37,26 +37,26 @@ export default function Page() {
 
         <div className="form flex-1 flex flex-col flex-wrap items-center gap-3">
           <div className="flex gap-2">
+            <Input type="text" placeholder="Name"></Input>
+            <Input type="text" placeholder="Subject"></Input>
+          </div>
+          <div className="flex gap-2">
+            <Input type="text" placeholder="Email"></Input>
+            <Input type="text" placeholder="Phone"></Input>
+          </div>
+          <div className="flex gap-2 w-full">
+            <textarea placeholder="Your Message" className=" border rounded-md w-full active:border-primary min-w-[20vw] p-3 outline-white text-white bg-transparent focus:outline-none focus:shadow-outline placeholder:text-disabled" rows={5}></textarea>
+            {/* <Input type="textarea" placeholder="Your Message"></Input> */}
+          </div>
+          {/* <div className="flex gap-2">
             <Input type="text" placeholder="Full Name"></Input>
             <Input type="text" placeholder="Full Name"></Input>
           </div>
           <div className="flex gap-2">
             <Input type="text" placeholder="Full Name"></Input>
             <Input type="text" placeholder="Full Name"></Input>
-          </div>
-          <div className="flex gap-2">
-            <Input type="text" placeholder="Full Name"></Input>
-            <Input type="text" placeholder="Full Name"></Input>
-          </div>
-          <div className="flex gap-2">
-            <Input type="text" placeholder="Full Name"></Input>
-            <Input type="text" placeholder="Full Name"></Input>
-          </div>
-          <div className="flex gap-2">
-            <Input type="text" placeholder="Full Name"></Input>
-            <Input type="text" placeholder="Full Name"></Input>
-          </div>
-          <Button>Submit</Button>
+          </div> */}
+          <Button className="bg-tertiary">Submit</Button>
         </div>
       </DivImage>
     </section>
