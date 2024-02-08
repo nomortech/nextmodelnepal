@@ -1,9 +1,12 @@
+"use client"
 import { DivImage } from "@/components/ui/DivImage";
 import { GridTileImage } from "@/components/ui/GridImage";
+import { Checkbox, Menu, RangeSlider } from "@mantine/core";
+import { BsFilterRight } from "react-icons/bs";
 
 export default function Page() {
   return (
-    <div className="flex flex-col flex-wrap px-[6rem] gap-[4rem] py-[5rem]">
+    <div className="flex flex-col flex-wrap px-2 md:px-[6rem] gap-[4rem] py-[5rem]">
       <DivImage
         alt="contact"
         className="min-h-[40vh] w-full m-auto "
@@ -21,34 +24,57 @@ export default function Page() {
         <h1 className="text-5xl">Female Models</h1>
       </DivImage>
 
-      <div className="flex justify-end items-center">
-        Filter By: {" "}&nbsp;
-        <select id="age" className="w-1/5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected>Age</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-        </select>&nbsp;
-        <select id="height" className="w-1/5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected>Height</option>
-          <option value="18">5'7" - 5'9"</option>
-          <option value="19">5'10" - 6'</option>
-          <option value="20">6' - 6'2"</option>
-          <option value="21">6'3" - 6'5"</option>
-        </select>&nbsp;
-        <select id="experience" className="w-1/5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected>Experience</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+      <div className="flex justify-end items-center px-2 md:px-0">
+        <Menu trigger="click" openDelay={100} closeDelay={400} position="bottom-end">
+          <Menu.Target>
+            <span className="cursor-pointer flex items-center gap-5" style={{fontSize: "30px"}}>Filter <BsFilterRight /></span>
+          </Menu.Target>
+          <Menu.Dropdown style={{width: "200px", textAlign: "center"}}>
+            <Menu.Item>
+              Age
+              <RangeSlider minRange={1} min={18} max={45} step={1} defaultValue={[20, 27]} />
+            </Menu.Item>
+            <Menu.Item>
+              Height
+              <Checkbox
+                className="pb-1"
+                label="<= 5'"
+              />
+              <Checkbox
+                className="pb-1"
+                label={`> 5' and <= 5' 7"`}
+              />
+              <Checkbox
+                className="pb-1"
+                label={`> 5'7" and < 6'`}
+              />
+              <Checkbox
+                className="pb-1"
+                label={`> 6'`}
+              />
+            </Menu.Item>
+            <Menu.Item>
+              Experience
+              <Checkbox
+                className="pb-1"
+                label="< 1 years"
+              />
+              <Checkbox
+                className="pb-1"
+                label="1 years to 3 years"
+              />
+              <Checkbox
+                className="pb-1"
+                label="> 3 years"
+              />
+            </Menu.Item>
+          </Menu.Dropdown>
+        </Menu>
       </div>
 
       <div className="gallery flex gap-[4rem] flex-wrap">
         {Array.from({ length: 6 }, (_, index) => (
-          <div key={index} className="single flex flex-col w-[380px] gap-3">
+          <div key={index} className="single flex flex-col w-[380px] mx-auto gap-3">
             <GridTileImage
               src={
                 "https://images.pexels.com/photos/620074/pexels-photo-620074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

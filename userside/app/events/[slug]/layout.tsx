@@ -11,7 +11,8 @@ export default function Layout(props: {
           {props.timeline}
           <div id="gradient"></div>
         </div>
-        <div className="flex-[3]">{props.event}</div>
+        <div className="flex-[3] hidden md:block">{props.event}</div>
+        {/* <div>{props.eventmodal}</div> */}
       </div>
     </div>
   );
