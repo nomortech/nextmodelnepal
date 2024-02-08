@@ -8,7 +8,7 @@ export default function Page() {
 
   return (
     <div className="py-[4rem]">
-      <div className="flex w-3/4 mx-auto justify-evenly items-center bg-gray-800 rounded-full">
+      <div className="flex flex-col md:flex-row w-3/4 mx-auto justify-evenly items-center bg-gray-800 rounded-[50px] md:rounded-full">
         {data.map((_: any, index: number) => (
           <div
             key={index}
@@ -20,7 +20,7 @@ export default function Page() {
         ))}
       </div>
       <br />
-      <div className="flex w-3/4 mx-auto justify-evenly items-center bg-gray-800 rounded-full">
+      <div className="flex flex-col md:flex-row w-3/4 mx-auto justify-evenly items-center bg-gray-800 rounded-[50px] md:rounded-full">
         {[2022, 2023, 2024].map((_: any, index: number) => (
           <div key={index} onClick={() => setActiveYear(_)} className={`transition-all w-full h-full text-center !py-4 rounded-full ${_ == activeYear ? "active" : ""}`}>
             <button className="text-3xl capitalize">{_}</button>

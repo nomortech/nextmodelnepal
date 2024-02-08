@@ -5,7 +5,7 @@ import { GridTileImage } from "@/components/ui/GridImage";
 export default function Page() {
   return (
     <div className="flex flex-wrap py-[4rem]">
-      <div className="flex-1 ">
+      <div className="hidden md:flex-1 md:block">
         <GridTileImage
           key={1}
           alt="Gallery Image"
@@ -30,6 +30,16 @@ export default function Page() {
           <Button variant="secondary">Hire Model</Button>
           <Button>Contact Us</Button>
         </div>
+        <div className="flex-1 md:hidden">
+          <GridTileImage
+            key={1}
+            alt="Gallery Image"
+            className="rounded-lg m-auto object-center object-cover h-full"
+            width={540}
+            height={1040}
+            src={`https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2&ixid=1`}
+          />
+        </div>
         <div className="flex flex-col gap-3">
           <h2 className="text-3xl">Gallery</h2>
           <hr className="hr-horizontal max-w-[200px]" />
@@ -38,7 +48,7 @@ export default function Page() {
               <GridTileImage
                 key={index}
                 alt="Gallery Image"
-                className="rounded-lg aspect-square object-center object-cover"
+                className="rounded-lg aspect-square object-center object-cover mx-auto sm:mx-0"
                 width={240}
                 height={240}
                 src={`https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2&ixid=${index}`}
