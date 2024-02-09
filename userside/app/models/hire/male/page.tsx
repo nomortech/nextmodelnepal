@@ -3,8 +3,11 @@ import { DivImage } from "@/components/ui/DivImage";
 import { GridTileImage } from "@/components/ui/GridImage";
 import { Checkbox, Menu, RangeSlider } from "@mantine/core";
 import { BsFilterRight } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col flex-wrap px-2 md:px-[6rem] gap-[4rem] py-[5rem]">
       <DivImage
@@ -82,6 +85,7 @@ export default function Page() {
               width={400}
               height={400}
               alt="hero active image"
+              onClick={() => router.push("/models")}
             ></GridTileImage>
             <h2>Aayusha Pokhrel</h2>
 

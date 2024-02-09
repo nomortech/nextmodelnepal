@@ -49,8 +49,8 @@ export default function Page() {
                 key={index}
                 alt="Gallery Image"
                 className="rounded-lg aspect-square object-center object-cover mx-auto sm:mx-0"
-                width={240}
-                height={240}
+                width={150}
+                height={150}
                 src={`https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2&ixid=${index}`}
               />
             ))}

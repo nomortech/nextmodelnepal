@@ -98,13 +98,13 @@ export default function Navbar() {
                 </Menu.Target>
                 <Menu.Dropdown>
                   <Menu.Item>
-                    <Link href="/">Event Management</Link>
+                    <Link href="#event-management">Event Management</Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link href="/">Talent Management</Link>
+                    <Link href="#talent-management">Talent Management</Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link href="/">Other Services</Link>
+                    <Link href="#other-services">Other Services</Link>
                   </Menu.Item>
                 </Menu.Dropdown>
               </Menu>
@@ -167,7 +167,7 @@ export default function Navbar() {
                 </Menu.Target>
                 <Menu.Dropdown>
                   <Menu.Item>
-                    <Link href="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>Event Management</Link>
+                    <Link href="#event-management">Event Management</Link>
                   </Menu.Item>
                   <Menu.Item>
                     <Link href="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>Talent Management</Link>
