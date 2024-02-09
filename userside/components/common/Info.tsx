@@ -72,7 +72,7 @@ export default function InfoDetails() {
         </div>
       </div>
 
-      <div>
+      <div id="event-management">
         <h2 className="text-5xl text-center font-bold">
           Dive into the World of Modeling
         </h2>
@@ -107,13 +107,14 @@ export default function InfoDetails() {
       <div className="flex flex-col lg:flex-row gap-[2rem] max-w-[90vw] m-auto ">
         {Array.from({ length: 2 }, (_, index) => (
           <div
+            id={index == 0 ? "talent-management" : "other-services"}
             key={index}
             className="single relative z-[-1] bg-[#0E0E0E] overflow-hidden flex flex-col justify-start items-start p-2 md:p-[4rem] gap-[1.5rem] rounded-xl flex-1"
           >
             <div className="absolute z-[-1] top-32 h-[200px] w-[200px] bg-[#ae8c75]  filter blur-[250px] pointer-events-none"></div>
 
             <h1 className="text-6xl font-bold text-balance">
-              Talents Management
+              {index == 0 ? "Talents Management" : "Other Services"}
             </h1>
             <p className="text-balance text-[1.2rem] text-tertiary">
               Discover how our event management team turns your visions into
