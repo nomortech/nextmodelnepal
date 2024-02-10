@@ -1,8 +1,11 @@
 import Button from "@/components/factory/Button";
 import { DivImage } from "@/components/ui/DivImage";
 import { GridTileImage } from "@/components/ui/GridImage";
+import Link from "next/link";
+// import { useRouter } from "next/navigation";
 
 export default function Page() {
+  // const router = useRouter();
   return (
     <div className="flex flex-wrap py-[4rem]">
       <div className="hidden md:flex-1 md:block">
@@ -26,9 +29,13 @@ export default function Page() {
           the fashion industry. Stay tuned for more from this promising talent
           as he paves his way to the top.
         </p>
-        <div className="flex gap-1">
-          <Button variant="secondary">Hire Model</Button>
-          <Button>Contact Us</Button>
+        <div className="flex gap-3">
+          <Link href={"/hire"}>
+            <Button variant="secondary">Hire Model</Button>
+          </Link>
+          <Link href={"/contact"}>
+            <Button>Contact Us</Button>
+          </Link>
         </div>
         <div className="flex-1 md:hidden">
           <GridTileImage
@@ -48,9 +55,9 @@ export default function Page() {
               <GridTileImage
                 key={index}
                 alt="Gallery Image"
-                className="rounded-lg aspect-square object-center object-cover mx-auto sm:mx-0"
-                width={150}
-                height={150}
+                className="rounded-lg aspect-square object-center object-cover w-[150px] md:w-[300px] mx-auto sm:mx-0"
+                width={500}
+                height={500}
                 src={`https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2&ixid=${index}`}
               />
             ))}
