@@ -126,13 +126,13 @@ export default function Discover() {
 
       <div className="flex w-full justify-evenly">
         <Button variant="secondary">
-          <Link href="/model">View Female Models</Link>
+          <Link href="/models/female">View Female Models</Link>
         </Button>
         <Button variant="secondary">
-          <Link href="/model">View all Model</Link>
+          <Link href="/models">View all Model</Link>
         </Button>
         <Button variant="secondary">
-          <Link href="/model">View Male Model</Link>
+          <Link href="/models/male">View Male Model</Link>
         </Button>
       </div>
     </div>

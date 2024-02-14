@@ -26,7 +26,7 @@ export default function Navbar() {
     },
     {
       name: "Events",
-      href: "/events/1",
+      href: "/events",
       active: pathname === "/events",
     },
     {
@@ -82,10 +82,10 @@ export default function Navbar() {
                 </Menu.Target>
                 <Menu.Dropdown>
                   <Menu.Item>
-                    <Link href="/models/hire/male">Male Models</Link>
+                    <Link href="/models/male">Male Models</Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link href="/models/hire/female">Female Models</Link>
+                    <Link href="/models/female">Female Models</Link>
                   </Menu.Item>
                 </Menu.Dropdown>
               </Menu>
@@ -98,13 +98,13 @@ export default function Navbar() {
                 </Menu.Target>
                 <Menu.Dropdown>
                   <Menu.Item>
-                    <Link href="#event-management">Event Management</Link>
+                    <Link href="/#event-management">Event Management</Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link href="#talent-management">Talent Management</Link>
+                    <Link href="/#talent-management">Talent Management</Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link href="#other-services">Other Services</Link>
+                    <Link href="/#other-services">Other Services</Link>
                   </Menu.Item>
                 </Menu.Dropdown>
               </Menu>

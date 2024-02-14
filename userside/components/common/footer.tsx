@@ -71,6 +71,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="bg-gray-700 text-white text-center py-3">Copyright © 2023 NextModelNepal by Nomor Tech. All Rights Reserved.</div>
     </div>
   );
 }
