@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "../factory/Button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function InfoDetails() {
   const router = useRouter();
@@ -22,8 +23,8 @@ export default function InfoDetails() {
             exercitationem amet expedita alias.
           </p>
           <div className="flex gap-3 flex-col md:flex-row">
-            <Button>View All Models</Button>
-            <Button variant="secondary">Become a Models</Button>
+            <Link href={"/models"}><Button>View All Models</Button></Link>
+            <Link href={"/contact"}><Button variant="secondary">Become a Model</Button></Link>
           </div>
         </div>
         <div className="flex-1 relative md:min-h-[400px] min-h-[300px]">
@@ -52,11 +53,11 @@ export default function InfoDetails() {
             Step into the Limelight
           </h1>
           <p>
-          Embarking on a modeling career can be daunting. Don't let self-doubt hold you back. Our expert training and personalized guidance are designed to hone your skills and boost your confidence.
+          Embarking on a modeling career can be daunting. Don&apos;t let self-doubt hold you back. Our expert training and personalized guidance are designed to hone your skills and boost your confidence.
           </p>
           <div className="flex gap-3 flex-col md:flex-row">
-            <Button>View All Models</Button>
-            <Button variant="secondary">Become a Models</Button>
+            <Link href={"/models"}><Button>View All Models</Button></Link>
+            <Link href={"/contact"}><Button variant="secondary">Become a Model</Button></Link>
           </div>
         </div>
         <div className="flex-1 relative md:min-h-[400px] min-h-[300px]">

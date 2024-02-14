@@ -74,7 +74,7 @@ export default function Page() {
 
       <div className="gallery flex gap-[4rem] flex-wrap">
         {Array.from({ length: 6 }, (_, index) => (
-          <div key={index} className="single flex flex-col w-[380px] mx-auto gap-3">
+          <div key={index} className="single flex flex-col w-[380px] mx-auto gap-3 cursor-pointer">
             <GridTileImage
               src={
                 "https://images.pexels.com/photos/620074/pexels-photo-620074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 import Slider from "react-slick";
 
 const LogoSlider = () => {
   const [settings] = useState({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 9000,
@@ -38,7 +39,7 @@ const LogoSlider = () => {
       >
         {logos.map((logo, index) => (
           <div key={index} className="container">
-            <img src={logo} alt={"logo"} width={150} height={150} />
+            <Image src={logo} alt={"logo"} width={150} height={150} />
           </div>
         ))}
       </Slider>

@@ -77,7 +77,7 @@ export default function Page() {
 
       <div className="gallery flex gap-[4rem] flex-wrap justify-between">
         {Array.from({ length: 6 }, (_, index) => (
-          <div key={index} className="single flex flex-col w-[380px] mx-auto gap-3">
+          <div key={index} className="single flex flex-col w-[380px] mx-auto gap-3 cursor-pointer">
             <GridTileImage
               src={
                 "https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -85,11 +85,10 @@ export default function Page() {
               width={400}
               height={400}
               alt="hero active image"
-              onClick={() => router.push("/models")}
+              onClick={() => router.push("/models/hire")}
             ></GridTileImage>
-            <h2>Aayusha Pokhrel</h2>
-
-            <span>Kathmandu nepal</span>
+            <h2>Aayush Pokhrel(22) / 6&apos;</h2>
+            <span>Kathmandu, Nepal</span>
           </div>
         ))}
       </div>

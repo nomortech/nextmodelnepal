@@ -10,7 +10,7 @@ export default function Events() {
       />
 
       <div className="gallery flex items-center justify-center gap-[2rem] md:gap-[4rem] flex-wrap">
-        {Array.from({ length: 4 }, (_, index) => (
+        {["Mr. Nepal", "Ms. Nepal", "Model Hunt Nepal", "Models Nepal"].map((_, index) => (
           <div key={index} className="single flex flex-col w-[300px] gap-3">
             <GridTileImage
               src={
@@ -22,7 +22,7 @@ export default function Events() {
             ></GridTileImage>
             <h2 className="text-3xl relative">
               <div className="border-b border-white w-16 absolute bottom-0 left-0"></div>
-              Mr. Nepal
+              {_}
             </h2>
 
             <span className="text-tertiary">

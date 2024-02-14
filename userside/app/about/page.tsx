@@ -9,7 +9,6 @@ export default function Page() {
         title="About Us"
         subtitle="We are next models nepal we are here to make you a better model of the year!"
       />
-
       <div className="relative w-[90vw] h-[60vh] m-auto  translate-y-[50px]">
         <GridTileImage
           src={
@@ -24,7 +23,7 @@ export default function Page() {
       <div className="bg-white text-black py-[5rem]">
         <div className="min-h-[30vh] pt-[50px] flex flex-wrap items-center justify-center gap-[5rem]">
           {Array.from({ length: 4 }).map((_, index) => (
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5" key={index}>
               <h2>Customer Satisfaction</h2>
               <h1 className="text-5xl font-bold">90%</h1>
             </div>

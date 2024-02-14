@@ -30,7 +30,8 @@ const Testimonials = () => {
         };
     }, []);
 
-    const sliderRef = useRef(null);
+    const sliderRef = useRef<any>(null);
+    // const sliderRef: React.MutableRefObject<Swiper | null> = useRef<Swiper | null>(null);
 
     const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;

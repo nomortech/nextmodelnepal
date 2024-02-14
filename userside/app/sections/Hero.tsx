@@ -1,6 +1,7 @@
 import Button from "@/components/factory/Button";
 import { Modal } from "@mantine/core";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -18,8 +19,8 @@ export default function Hero() {
         </p>
         <br />
         <div className="flex gap-2">
-          <Button>Hire Male Model</Button>
-          <Button variant="secondary">Hire Female Model</Button>
+          <Link href={"/models/male"}><Button>Hire Male Model</Button></Link>
+          <Link href={"/models/female"}><Button variant="secondary">Hire Female Model</Button></Link>
         </div>
       </div>
     </div>
