@@ -14,7 +14,8 @@ export default function Events() {
           <div key={index} className="single flex flex-col w-[300px] gap-3">
             <GridTileImage
               src={
-                "https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                "/events.webp"
+                // "https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               }
               width={400}
               height={400}
