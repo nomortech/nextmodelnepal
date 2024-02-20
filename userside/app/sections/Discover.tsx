@@ -17,7 +17,8 @@ export default function Discover() {
             <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
-                  "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?cs=srgb&dl=pexels-samarth-singhai-1193942.jpg&fm=jpg"
+                  "/female-model.jpeg"
+                  // "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?cs=srgb&dl=pexels-samarth-singhai-1193942.jpg&fm=jpg"
                 }
                 width={200}
                 height={200}
@@ -33,7 +34,7 @@ export default function Discover() {
             <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
-                  "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?cs=srgb&dl=pexels-samarth-singhai-1193942.jpg&fm=jpg"
+                  "/female-model.jpeg"
                 }
                 width={200}
                 height={200}
@@ -49,7 +50,7 @@ export default function Discover() {
             <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
-                  "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?cs=srgb&dl=pexels-samarth-singhai-1193942.jpg&fm=jpg"
+                  "/female-model.jpeg"
                 }
                 width={200}
                 height={200}
@@ -73,7 +74,7 @@ export default function Discover() {
             <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
-                  "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWx8ZW58MHx8MHx8fDA%3D"
+                  "/another-model.avif"
                 }
                 width={200}
                 height={200}
@@ -90,7 +91,7 @@ export default function Discover() {
             <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
-                  "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWx8ZW58MHx8MHx8fDA%3D"
+                  "/another-model.avif"
                 }
                 width={200}
                 height={200}
@@ -107,7 +108,7 @@ export default function Discover() {
             <div className="single flex flex-col w-[150px] gap-2">
               <GridTileImage
                 src={
-                  "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWx8ZW58MHx8MHx8fDA%3D"
+                  "/another-model.avif"
                 }
                 width={200}
                 height={200}

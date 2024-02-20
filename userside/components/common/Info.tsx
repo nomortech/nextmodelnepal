@@ -29,7 +29,7 @@ export default function InfoDetails() {
         </div>
         <div className="flex-1 relative md:min-h-[400px] min-h-[300px]">
           <Image
-            src="https://images.pexels.com/photos/735552/pexels-photo-735552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Replace with your background image path
+            src="/model-2.webp" // Replace with your background image path
             alt="Background"
             width={500}
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -37,7 +37,7 @@ export default function InfoDetails() {
             className="absolute w-64 md:w-3/4 z-10 right-0 top-0 border-[2px] rounded-xl border-[#AE9775]"
           />
           <Image
-            src="https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/model-3.webp"
             alt="Foreground"
             sizes="(max-width: 768px) 100vw, 50vw"
             width={400} // Set the size of the foreground image as needed
@@ -62,7 +62,7 @@ export default function InfoDetails() {
         </div>
         <div className="flex-1 relative md:min-h-[400px] min-h-[300px]">
           <Image
-            src="https://images.pexels.com/photos/735552/pexels-photo-735552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Replace with your background image path
+            src="/model-2.webp" // Replace with your background image path
             alt="Background"
             width={500}
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -70,7 +70,7 @@ export default function InfoDetails() {
             className="absolute w-64 md:w-3/4 z-10 right-0 top-0 border-[2px] rounded-xl border-[#AE9775]  "
           />
           <Image
-            src="https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/model-3.webp"
             alt="Foreground"
             sizes="(max-width: 768px) 100vw, 50vw"
             width={400} // Set the size of the foreground image as needed
@@ -162,7 +162,7 @@ export default function InfoDetails() {
             </Button>
             <div className="relative min-h-[400px] w-full">
               <Image
-                src="https://images.pexels.com/photos/735552/pexels-photo-735552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Replace with your background image path
+                src="/model-2.webp" // Replace with your background image path
                 alt="Background"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 fill

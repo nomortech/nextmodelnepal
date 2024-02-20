@@ -32,7 +32,7 @@ export default function Contact() {
       className="min-h-[90vh] w-[90vw] m-auto "
       innerClassName="flex items-center flex-col "
       active
-      src="https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      src="/male-model.webp"
     >
       <TextDetails
         title="Become a Top Model"

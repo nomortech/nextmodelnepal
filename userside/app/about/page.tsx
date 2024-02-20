@@ -12,7 +12,7 @@ export default function Page() {
       <div className="relative w-[90vw] h-[60vh] m-auto  translate-y-[50px]">
         <GridTileImage
           src={
-            "https://images.pexels.com/photos/1054251/pexels-photo-1054251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "/about-image.jpeg"
           }
           alt="image"
           className=" object-cover object-center  rounded-xl "

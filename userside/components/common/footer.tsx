@@ -61,7 +61,7 @@ export default function Footer() {
               <GridTileImage
                 key={index}
                 src={
-                  "https://images.pexels.com/photos/2092474/pexels-photo-2092474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  "/model-4.webp"
                 }
                 alt="asdf"
                 width={150}
